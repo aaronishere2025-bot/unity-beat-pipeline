@@ -1,6 +1,8 @@
 # Unity Beat Pipeline
 
-AI-powered YouTube beat generation and upload pipeline with Thompson Sampling optimization.
+Built by Aaron Wilkins
+
+AI-powered YouTube beat generation and upload pipeline with Thompson Sampling optimization. Currently operating across multiple YouTube channels with daily automated uploads.
 
 Automatically generates instrumental music, creates visualizer videos, and uploads to YouTube — learning what works best over time.
 
@@ -93,11 +95,7 @@ Pipeline
 
 ## Daily Schedule
 
-The pipeline runs on a configurable schedule:
-- **7:50 PM PT** — Lofi beat generation (30-min study mix)
-- **8:50 PM PT** — Trap beat generation (5-min type beat)
-
-Both upload immediately on completion.
+The pipeline runs on a configurable daily schedule, generating and uploading beats automatically. Schedule times are configurable via the pipeline orchestrator.
 
 ## Cost Per Video
 
