@@ -1,0 +1,23 @@
+[Unit]
+Description=Unity AI Video Generation Server
+After=network.target
+
+[Service]
+Type=simple
+User=aaronishere2025
+WorkingDirectory=/home/aaronishere2025
+Environment="NODE_ENV=production"
+Environment="PORT=8080"
+Environment="PATH=/usr/bin:/usr/local/bin:/home/aaronishere2025/node_modules/.bin"
+ExecStart=/usr/bin/node dist/index.js
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/aaronishere2025/logs/server.log
+StandardError=append:/home/aaronishere2025/logs/server-error.log
+
+# Resource limits
+LimitNOFILE=65536
+MemoryMax=4G
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+venv/
+
+# Build output
+dist/
+
+# Environment & secrets
+.env
+.env.*
+client_secrets.json
+
+# Data & media
+data/
+attached_assets/
+public/videos/
+public/
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+.local/
+scripts/__pycache__/
+nltk_data/
+
+# Archives
+*.zip
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Shell/profile files
+.bash_history
+.bashrc
+.bash_logout
+.profile
+.viminfo
+.gitconfig
+
+# Misc
+snap/
+replit_integrations/
+.dockerignore
+*.backup*
+.claude.json*
+NODE_ENV=*
+rest-express@*
+.github/workflows/ci.yml
